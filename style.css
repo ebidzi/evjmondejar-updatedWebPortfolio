@@ -1,0 +1,698 @@
+nav{
+    padding:10px;
+    font-weight: 400;
+    font-style: normal; 
+    position:fixed;
+    width:100%;
+    top:0;
+    margin:0;
+    border-radius: 0px;
+    background: rgb(2, 0, 128);;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255,255,255,0.125);
+    box-shadow: -1px 5px 10px black;
+}
+
+.anav{
+    text-decoration: none;
+    margin:0 20px;
+    font-weight: bold;
+    color: white;
+    transition:1s;
+}
+.anav:hover{
+    color:gold;
+    font-size: large;
+}
+.intro{
+    padding:10px;
+    background: linear-gradient(70deg, black,rgb(0, 10, 99),rgb(0, 19, 128), rgb(73, 0, 0),rgb(119, 0, 0)), rgb(206, 0, 0);
+    height:450px;
+    position:relative;
+    animation: introbg 12s ease-in-out infinite;
+    background-size: 300% 300%;
+    box-shadow: 2px 5px 20px black;
+}
+@keyframes introbg{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.profile-pic{
+    width:20%;
+    border-radius:30px;
+    box-shadow: 2px 5px 10px black;
+    position:absolute;
+    top:100px;
+    left:300px;
+    transition:1s;
+}
+
+.profile-pic:hover{
+    width:25%;
+    border-radius: 10px;
+}
+
+.intro-text{
+    padding:10px;
+    color:white;
+    position: relative;
+    left:650px;
+    top:150px;
+    width:500px;
+}
+
+body{
+    font-family: "Changa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+    background:rgba(255, 255, 255, 0.959);
+    margin:0;
+}
+.hello{
+    position:absolute;
+    top:10px;
+    display:inline-block;
+}
+.name{
+    display: inline-block;
+}
+.evj{
+    color:gold;
+}
+.programmer{
+    position:absolute;
+    top:60px;
+}
+.profile-text{
+    width:560px;
+    color:white;
+    position:absolute;
+    top:100px;
+}
+
+.lang{
+    color:gold;
+}
+
+.intro-footer{
+    width:700px;
+    text-align: center;
+    position:relative;
+    left: 300px;
+    transition:5s;
+}
+.do{
+    font-size:40px;
+    margin-top: 0;
+    text-transform:capitalize;
+    display:block;
+    font-weight: bold;
+    color:rgb(0, 0, 94);
+    transition:5s;
+}
+.love{
+    font-size:40px;
+    margin-top: 0;
+    text-transform: capitalize;
+    font-weight: bolder;
+    color:rgb(94, 0, 0);
+    transition:5s;
+}
+
+/*PAGE TWO*/
+.page-two{
+    text-align: center;
+    margin-top: 50px;  
+}
+#whatIdo{
+    font-size: 30px;
+    animation: backwards;
+}
+
+.basketball{
+    position:absolute;
+    left:110px;
+    width:300px;
+    height:400px;
+    margin-top: 80px;
+    text-align: center;
+    padding:2px;
+    border:2px solid black;
+    border-radius:10px;
+    box-shadow: 5px 8px 15px blue, -5px -8px 15px red;
+}
+
+.basketball-logo{
+    width:50px;
+    display:block;
+    text-align: center;
+    position:relative;
+    left:125px;
+}
+.gym{
+    position:absolute;
+    left:520px;
+    width:300px;
+    height:400px;
+    margin-top: 80px;
+    padding:2px;
+    text-align: center;
+    border:2px solid black;
+    border-radius:10px;
+    box-shadow: 5px 8px 15px blue, -5px -8px 15px red;
+}
+
+.gym-logo{
+    width:60px;
+    display:block;
+    position:relative;
+    left:120px;
+}
+
+.code{
+    position:absolute;
+    right:110px;
+    width:300px;
+    height:400px;
+    margin-top: 80px;
+    padding:2px;
+    text-align: center;
+    border:2px solid black;
+    border-radius:10px;
+    box-shadow: 5px 8px 15px blue, -5px -8px 15px red;
+}
+.code-logo{
+    width:70px;
+    display:block;
+    position:relative;
+    left:115px;
+}
+
+/*Page three*/
+.page-three{
+    margin-top: 550px;
+    text-align: center;
+    width:100%;
+    height:2000px;
+    position:relative;
+    background: linear-gradient(100deg,darkblue, blue, rgb(0, 119, 255), rgb(0, 192, 176), rgb(0, 172, 100), rgb(41, 247, 0));
+    animation: pageTwo 10s ease-in-out infinite;
+    background-size: 300% 300%;
+    box-shadow: 2px 5px 15px darkblue, -5px -8px 15px darkblue;
+}
+@keyframes pageTwo{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+#projects{
+    font-size: 30px;
+    animation: backwards;
+    color:white;
+    font-weight: bold;
+}
+
+.javaCrudLogo{
+    width:100%;
+    position:relative;
+    border-radius: 10px;
+    
+}
+.crudText{
+    width:100%;
+}
+.cLogo{
+    width:30px;
+    position:relative;
+    top:5px;
+}
+
+.cLogoBg{
+    width:100px;
+    text-align: center;
+    border-radius: 5px;
+    position:absolute;
+    top: 300px;
+    right:10px;
+}
+.crudGithub{
+    text-decoration: none;
+    position:absolute;
+    top:305px;
+    right:120px;
+    transition:1s;
+    color:blue;
+}
+
+.crudGithub:hover{
+    text-decoration: underline;
+    font-size: large;
+    color:rgb(79, 0, 82);
+}
+.javaCrud{
+    position:absolute;
+    left:50px;
+    top:150px;
+    width:40%;
+    height:350px;
+    margin-top: 100px;
+    background:gray;
+    text-align: left;
+    margin:0;
+    background: rgba(255,255,255,0.4);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.javaFormsLogo{
+    width:100%;
+    position:relative;
+    border-radius: 10px;
+}
+.formsGithub{
+    text-decoration: none;
+    position:absolute;
+    top:340px;
+    right:110px;
+    transition:1s;
+    color:blue;
+}
+.formsGithub:hover{
+    text-decoration: underline;
+    font-size: large;
+    color:rgb(79, 0, 82);
+}
+.javaLogo{
+    width:80px;
+    position:relative;
+}
+.javaLogoBg{
+    position:absolute;
+    right:10px;
+    top:320px;
+    border-radius: 5px;
+}
+
+.javaForms{
+    position:absolute;
+    right:50px;
+    top:150px;
+    width:30%;
+    height:380px;
+    margin-top: 100px;
+    background:gray;
+    text-align: left;
+    margin:0;
+    background: rgba(255,255,255,0.4);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.tempConverterLogo{
+    width:100%;
+    position:relative;
+    border-radius: 10px;
+}
+.tempConvertText{
+    font-size:11px;
+    position:absolute;
+    top:280px;
+    left:1px;
+    width:500px;
+}
+.tempJavaBg{
+    position:absolute;
+    left:180px;
+    top:300px;
+    height:45px;
+    border-radius: 5px;
+}
+
+.tempGithub{
+    position:absolute;
+    left:50px;
+    top:310px;
+    transition:1s;
+    color:blue;
+    text-decoration: none;
+}
+
+.tempGithub:hover{
+    text-decoration: underline;
+    font-size: large;
+    color:rgb(79, 0, 82);
+}
+
+.tempConverter{
+    position:absolute;
+    left:50px;
+    top:600px;
+    width:20%;
+    height:350px;
+    margin-top: 200px;
+    background:gray;
+    text-align: left;
+    margin:0;
+    background: rgba(255,255,255,0.4);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.vigorosoGymLogo{
+    width:100%;
+    position:relative;
+    border-radius: 10px;
+}
+
+.jimJavaBg{
+    border-radius: 5px;
+    position:absolute;
+    top:540px;
+    right:50px;
+ 
+}
+
+.gymGithub{
+    position:absolute;
+    top:550px;
+    right:200px;
+}
+
+.vigorosoGym{
+    position:absolute;
+    right:50px;
+    top:600px;
+    width:70%;
+    height:600px;
+    margin-top: 200px;
+    background:gray;
+    text-align: left;
+    margin:0;
+    background: rgba(255,255,255,0.4);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    box-shadow: 8px 8px 20px black;
+}
+
+.firstWebsiteLogo{
+    width:100%;
+    position:relative;
+    border-radius: 10px;
+}
+
+.firstWebsite{
+    position:absolute;
+    top:1300px;
+    width:80%;
+    left:120px;
+    height:630px;
+    margin-top: 200px;
+    background:gray;
+    text-align: left;
+    margin:0;
+    background: rgba(255,255,255,0.4);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px black;
+}
+.webText{
+    font-size: large;
+    position:relative;
+    left:50px;
+}
+
+.htmlLogo{
+    width:70px;
+    margin-top: 6px;;
+}
+
+.htmlbg{
+    position:absolute;  
+    top:578px;
+    text-align: center;
+    border-radius: 5px;
+    right:150px;
+}
+
+.webGithub{
+    position:absolute;
+    right:250px;
+    top: 590px;
+    color:blue;
+    text-decoration: none;
+    transition:1s;
+}
+
+.webGithub:hover{
+    text-decoration: underline;
+    font-size: large;
+    color:rgb(79, 0, 82);
+}
+
+
+/*Page-four*/
+
+.page-four{
+    text-align: center;
+    width:100%;
+    height:1300px;
+    position:relative;
+    margin-top: 80px;
+    
+}
+
+#resume{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.resumeProfile{
+    width:100%;
+    text-align: left;
+    font-size: 30px;
+    position:relative;
+    top:50px;
+    left:100px;
+}
+
+.resumeName{
+    font-weight: bold;
+    font-size: 40px;
+}
+.location{
+    font-style: italic;
+}
+
+/*Contacts panel*/
+.contacts{
+    width:300px;
+    height: 300px;
+    border:2px solid black;
+    text-decoration: none;
+    position:relative;
+    top:150px;
+    left:70px;
+    border-radius: 10px;
+    box-shadow:3px 5px 15px black, -3px -5px 15px gold;
+}
+
+.phoneLogo{
+    width:30px;
+    position:absolute;
+    top:50px;
+    left:50px;
+}
+.number{
+    position:absolute;
+    left:100px;
+    top: 50px;
+}
+
+.emailLogo{
+    width:30px;
+    position:absolute;
+    top:110px;
+    left:50px;
+}
+.email{
+    position:absolute;
+    left:100px;
+    top: 110px;
+}
+
+
+.fbLogo{
+    width:30px;
+    position:absolute;
+    top:170px;
+    left:50px;
+}
+.facebook{
+    position:absolute;
+    left:100px;
+    top: 170px;
+}
+
+.igLogo{
+    width:30px;
+    position:absolute;
+    top:240px;
+    left:50px;
+}
+.instagram{
+    position:absolute;
+    left:100px;
+    top: 235px;
+}
+.contactList{
+    list-style-type: none;
+    text-align: left;
+}
+
+.socmed{
+    text-decoration: none;
+    color:black;
+    transition:1s;
+}
+
+.socmed:hover{
+    text-decoration: underline;
+    color:rgb(0, 25, 253);
+    font-size: large;
+}
+/*end of Contacts panel*/
+
+
+/*Resume Headers*/
+.resumeHeaders{
+    font-weight: bold;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+}
+/*Resume Headers*/
+
+
+
+/*Skills panel*/
+.skills{
+    width:300px;
+    position:relative;
+    top:200px;
+    border:2px solid black;
+    border-radius: 10px;
+    left:70px;
+    box-shadow: 3px 5px 15px black, -3px -5px 15px gold;
+}
+
+.skillsList{
+    text-align: left;
+}
+/*end of Skills panel*/
+
+/*Education*/
+.education{
+    width:300px;
+    height:300px;
+    position:relative;
+    top:250px;
+    border:2px solid black;
+    border-radius: 10px;
+    left:70px;
+    box-shadow: 2px 3px 10px black, -2px -3px 10px  gold;
+    padding-left: 10px;
+}
+
+.school{
+    font-weight: bold;
+    display:block;
+    text-align: center;
+}
+
+
+.cite{
+    text-align: left;
+    position:relative;
+    top:20px;
+}
+.christi{
+    text-align: left;
+    position:relative;
+    top:40px;
+}
+/* end of Education panel*/
+
+/*Core Competencies*/
+
+.coreCompetencies{
+    width:500px;
+    height: 600px;
+    border: 2px solid black;
+    position: absolute;
+    top:270px;
+    right:70px;
+    padding-left: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 15px black, -3px -5px 15px gold;
+}
+
+.coreContents{
+    text-align: left;
+}
+
+.coreHeaders{
+    display: block;
+    font-weight: bold;
+}
+
+/*end of Core Competencies panel*/
+
+/*Awards and Certificates*/
+.certificates{
+    width:600px;
+    height:350px;
+    position:absolute;
+    border:2px solid black;
+    border-radius: 10px;
+    right:70px;
+    top:920px;
+    box-shadow:3px 5px 15px black, -3px -5px 15px gold;
+    padding-left: 10px;
+    
+}
+
+.awards{
+    text-align: left;
+}
+
+/*end of awards and certificates panel*/
+
