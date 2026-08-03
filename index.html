@@ -1,316 +1,144 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>evj-mondejar</title>
-        <link rel="icon" href="logo.jpg">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Frijole&family=Madimi+One&display=swap" rel="stylesheet">
-    </head>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Eduardo Vicente Jose Mondejar, a web developer and programmer.">
+  <title>EVJ Mondejar | Developer Portfolio</title>
+  <link rel="icon" href="logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="EVJ Mondejar home"><span>EVJ</span><i></i></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
 
-    <body>      
-        <div class="intro">
-            <img src="profile.jpg" alt="profile-pic" class="profile-pic" width="100%"/>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span> Available for opportunities</p>
+          <p class="hero-kicker">Hello, I’m</p>
+          <h1>Eduardo Vicente<br><em>Jose Mondejar.</em></h1>
+          <p class="hero-role">Web developer <span>/</span> Programmer</p>
+          <p class="hero-description">I build useful, thoughtful digital experiences with clean code and a curious problem-solving mindset.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <span>↓</span></a>
+            <a class="text-link" href="#contact">Get in touch <span>↗</span></a>
+          </div>
+        </div>
+        <div class="hero-visual reveal reveal-delay">
+          <div class="portrait-frame">
+            <img src="profile.jpg" alt="Eduardo Vicente Jose Mondejar" class="profile-pic">
+          </div>
+          <div class="code-stamp" aria-hidden="true">&lt;/&gt;</div>
+          <div class="profile-note"><span>Based in</span><strong>Cebu, Philippines</strong></div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about section"><span>Scroll to discover</span><i>↓</i></a>
+    </section>
 
-            <div class="intro-text">
-                <span class="hello">
-                    Hello!
-                </span>
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 / About me</p>
+          <h2>More than a developer.</h2>
+          <p>I enjoy turning ideas into clear, functional experiences—and bringing the same focus to every challenge I take on.</p>
+        </div>
+        <div class="interest-grid">
+          <article class="interest-card reveal">
+            <div class="interest-icon">01</div>
+            <img src="basketball.jpg" alt="A basketball" loading="lazy">
+            <div><h3>Basketball</h3><p>Strategy, teamwork, and the joy of always working toward the next play.</p></div>
+          </article>
+          <article class="interest-card reveal reveal-delay">
+            <div class="interest-icon">02</div>
+            <img src="gym.jpg" alt="Gym equipment" loading="lazy">
+            <div><h3>Fitness</h3><p>Training discipline and mental resilience that carry into my work.</p></div>
+          </article>
+          <article class="interest-card reveal reveal-delay-2">
+            <div class="interest-icon">03</div>
+            <img src="code.jpg" alt="Programming code on a screen" loading="lazy">
+            <div><h3>Coding</h3><p>Learning, debugging, and building practical solutions one line at a time.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-                <h1 class="name">I'm 
-                    <span class="evj">
-                        EVJ Mondejar
-                    </span>
-                </h1>
-
-                <h4 class="programmer">
-                    Web Developer / Programmer
-                </h4>
-
-                <p class="profile-text">
-                     A skilled programmer with the expertise in 
-                        <span class="lang">
-                            Java
-                        </span>, 
-                        
-                        <span  class="lang">
-                            C
-                        </span> ,
-
-                         <span  class="lang">
-                            C++
-                        </span>,
-
-                         <span  class="lang">
-                            Html
-                        </span>, 
-
-                        <span  class="lang">
-                             Css 
-                        </span>and 
-
-                        <span  class="lang">
-                            JavaScript
-                        </span>.
-                        
-                        With a knack for problem-solving and a passion for clean code, I'm ready to tackle any challenge head-on. Let's build something awesome together!
-                </p>
-            </div>
-
-
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="projects-top reveal">
+          <div class="section-heading">
+            <p class="eyebrow">02 / Selected work</p>
+            <h2>Things I’ve built.</h2>
+          </div>
+          <div class="project-filters" role="group" aria-label="Filter projects">
+            <button class="filter active" data-filter="all">All <span>05</span></button>
+            <button class="filter" data-filter="java">Java <span>03</span></button>
+            <button class="filter" data-filter="c">C <span>01</span></button>
+            <button class="filter" data-filter="web">Web <span>01</span></button>
+          </div>
         </div>
 
-        <div class="intro-footer">
-           <span class="do">
-            "Do what you Love,
-           </span>
-
-           <span class="love">
-            Love what you do"
-            </span>
-
+        <div class="project-grid" aria-live="polite">
+          <article class="project-card project-featured reveal" data-category="c">
+            <div class="project-image"><img src="javaBasicCrud.png" alt="Basic CRUD program interface" loading="lazy"><span class="project-number">01</span></div>
+            <div class="project-content"><div><p class="project-type">C application</p><h3>Basic CRUD</h3><p>My first project—a command-line CRUD application made with C.</p></div><div class="project-bottom"><div class="tag-list"><span>C</span></div><a href="https://github.com/ebidzi/basic-crud" target="_blank" rel="noopener noreferrer" aria-label="View Basic CRUD on GitHub">GitHub ↗</a></div></div>
+          </article>
+          <article class="project-card reveal" data-category="java">
+            <div class="project-image"><img src="javaForms.png" alt="Java registration form interface" loading="lazy"><span class="project-number">02</span></div>
+            <div class="project-content"><div><p class="project-type">Java desktop app</p><h3>Registration Forms</h3><p>A basic Java GUI project for capturing registration details.</p></div><div class="project-bottom"><div class="tag-list"><span>Java</span><span>GUI</span></div><a href="https://github.com/ebidzi/registrationFormJava" target="_blank" rel="noopener noreferrer" aria-label="View Registration Forms on GitHub">GitHub ↗</a></div></div>
+          </article>
+          <article class="project-card reveal" data-category="java">
+            <div class="project-image"><img src="tempConvert.png" alt="Temperature converter application" loading="lazy"><span class="project-number">03</span></div>
+            <div class="project-content"><div><p class="project-type">Java utility</p><h3>Temperature Converter</h3><p>A simple converter for Celsius, Fahrenheit, and Kelvin.</p></div><div class="project-bottom"><div class="tag-list"><span>Java</span></div><a href="https://github.com/ebidzi/tempConverter" target="_blank" rel="noopener noreferrer" aria-label="View Temperature Converter on GitHub">GitHub ↗</a></div></div>
+          </article>
+          <article class="project-card project-wide reveal" data-category="java">
+            <div class="project-image"><img src="vigorosoGym.png" alt="Vigoroso Fitness Gym system interface" loading="lazy"><span class="project-number">04</span></div>
+            <div class="project-content"><div><p class="project-type">Java management system</p><h3>Vigoroso Fitness Gym</h3><p>A gym-management project designed for members, trainers, cashiers, and owners.</p></div><div class="project-bottom"><div class="tag-list"><span>Java</span><span>Management</span></div><a href="https://github.com/ebidzi/gym" target="_blank" rel="noopener noreferrer" aria-label="View Vigoroso Fitness Gym on GitHub">GitHub ↗</a></div></div>
+          </article>
+          <article class="project-card project-wide reveal" data-category="web">
+            <div class="project-image"><img src="firstWebsite.png" alt="First web portfolio website" loading="lazy"><span class="project-number">05</span></div>
+            <div class="project-content"><div><p class="project-type">Web portfolio</p><h3>First Website</h3><p>My first personal portfolio, built from scratch with HTML and CSS.</p></div><div class="project-bottom"><div class="tag-list"><span>HTML</span><span>CSS</span></div><a href="https://github.com/ebidzi/web-portfolio" target="_blank" rel="noopener noreferrer" aria-label="View first website on GitHub">GitHub ↗</a></div></div>
+          </article>
         </div>
-    
-        <div class="page-two">
-            <span id="whatIdo">
-                What I do
-            </span>
+        <p class="empty-state" hidden>No projects in this category yet.</p>
+      </div>
+    </section>
 
-            <div class="basketball">
-                <img src="basketball.jpg" alt="basketball" class="basketball-logo">
-
-                <p><b>Basketball</b></p>
-
-                <span class="basketball-text">
-                     Basketball isn't just a game to me, it's a passion that extends beyond the court, filled with cherished memories and invaluable life lessons. Whether strategizing plays or celebrating victories, it's a constant source of inspiration and joy that shapes my outlook on life and fuels my pursuit of excellence.
-                </span>
-            </div>
-
-            <div class="gym">
-                <img src="gym.jpg" alt="gym" class="gym-logo">
-
-                <p><b>Gym</b></p>
-
-                <span class="gym-text">
-                     I'm passionate about fitness and strength training, dedicating my free time to intense gym sessions. It's more than a hobby—it's a lifestyle. Pushing my limits brings a sense of accomplishment, fueling my drive for self-improvement. Each workout is not just about physical gains but also mental resilience, shaping me to tackle challenges with confidence. 
-                </span>
-
-            </div>
-
-            <div class="code">
-                <img src="code.jpg" alt="code" class="code-logo">
-
-                <p><b>Coding</b></p>
-
-                <span class="code-text">
-                    Devoted to honing my coding skills, I immerse myself in programming projects whenever I can. It's more than just a hobby, it's a passion that drives me to constantly learn and improve. Whether I'm debugging code, exploring new languages, or building innovative projects, I find joy in every line written and problem solved.
-                </span>
-            </div>
+    <section class="section resume-section" id="resume">
+      <div class="container">
+        <div class="section-heading reveal"><p class="eyebrow">03 / Background</p><h2>Built on curiosity<br>&amp; consistency.</h2></div>
+        <div class="resume-grid">
+          <article class="resume-card reveal"><p class="card-label">Core skills</p><ul class="skill-list"><li><span>01</span>Programming</li><li><span>02</span>Project management</li><li><span>03</span>Critical thinking</li><li><span>04</span>Communication</li><li><span>05</span>Computer troubleshooting</li></ul></article>
+          <article class="resume-card education-card reveal reveal-delay"><p class="card-label">Education</p><div class="timeline"><div><span>2022 — Present</span><h3>CITE Technical Institute, Inc.</h3><p>Diploma in Computer Engineering Technology</p></div><div><span>2020 — 2022</span><h3>Academia del Christifidelis</h3><p>Senior High School, STEM track</p></div><div><span>2017 — 2020</span><h3>Academia del Christifidelis</h3><p>Junior High School</p></div></div></article>
+          <article class="resume-card awards-card reveal"><p class="card-label">Recognition</p><p>EPASS NC II &middot; CSS NC II</p><p>Multiple-time district tennis champion and basketball training-camp MVP.</p></article>
+          <article class="resume-card tools-card reveal reveal-delay"><p class="card-label">Tools &amp; technologies</p><div class="tech-cloud"><span>Java</span><span>C</span><span>C++</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Photoshop</span></div></article>
         </div>
+      </div>
+    </section>
 
-        <div class="page-three">
-            <span id="projects">Projects</span>
-            <div class="javaCrud">
-                <img src="javaBasicCrud.png" alt="javaCrud" class="javaCrudLogo">
+    <section class="contact-section" id="contact">
+      <div class="container contact-wrap reveal">
+        <div><p class="eyebrow">04 / Contact</p><h2>Let’s create<br>something useful.</h2></div>
+        <div class="contact-content"><p>I’m always open to discussing a project, an opportunity, or a great idea.</p><a class="email-link" href="mailto:emondejar62@gmail.com">emondejar62@gmail.com <span>↗</span></a><div class="social-links"><a href="https://www.facebook.com/evjmondejar" target="_blank" rel="noopener noreferrer">Facebook</a><a href="https://www.instagram.com/ebidzii/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="tel:+639284374512">+63 928 437 4512</a></div></div>
+      </div>
+    </section>
+  </main>
 
-                <span  class="crudText">My first project: Basic Crud using C language.
-                </span>
-
-                <a href="https://github.com/ebidzi/basic-crud" class="crudGithub"  target="_blank">View on Github</a>
-
-                <div class="cLogoBg">
-                    <img src="cLogo.png" alt="C logo" class="cLogo">
-                </div>
-                
-            </div>
-    
-            <div class="javaForms">
-                <img src="javaForms.png" alt="javaForms" class="javaFormsLogo">
-
-                <span class="formsText">My first java GUI: Basic Forms</span>
-
-                <div class="javaLogoBg">
-                    <img src="javaLogo.png" alt="javaLogo" class="javaLogo">
-                </div>
-
-                <a href="https://github.com/ebidzi/registrationFormJava" class="formsGithub" target="_blank">View on Github</a> 
-
-            </div>
-    
-            <div class="tempConverter">
-                <img src="tempConvert.png" alt="tempConverter" class="tempConverterLogo">
-                <span class="tempConvertText">Basic Temperature Converter: Celsius/Fahrenheit/Kelvin</span>
-
-                <div class="tempJavaBg">
-                    <img src="javaLogo.png" alt="JavaLogo" class="javaLogo">
-                </div>
-
-                <a href="https://github.com/ebidzi/tempConverter" class="tempGithub" target="_blank">View on Github</a>
-            </div>
-    
-            <div class="vigorosoGym">
-                <img src="vigorosoGym.png" alt="vigorosoGym" class="vigorosoGymLogo">
-
-                <span>
-                    My biggest java project: Vigoroso Fitness Gym<br>
-                    Consists of 4 roles(Member, Trainer, Cashier, Owner)
-                </span>
-
-                <div class="jimJavaBg">
-                    <img src="javaLogo.png" alt="javaLogo" class="javaLogo">
-                </div>
-
-                <a href="https://github.com/ebidzi/gym" class="gymGithub" target="blank">View on Github</a>
-            </div>
-    
-            <div class="firstWebsite">
-                <img src="firstWebsite.png" alt="firstWebsite" class="firstWebsiteLogo">
-                <span class="webText">My first web Portfolio using Html and Css</span>
-
-                <div class="htmlbg">
-                    <img src="htmlCssLogo.png" alt="html logo" class="htmlLogo">
-                </div>
-                <a href="https://github.com/ebidzi/web-portfolio" class="webGithub" target="_blank">View on Github</a>
-            </div>
-        </div>
-
-        <div class="page-four">
-            <span id="resume">Resume and Contacts</span>
-
-            <div class="resumeProfile">
-                <span class="resumeName">
-                    Eduardo Vicente Jose Mondejar <br> 
-                </span>
-                <span class="location">Lamac, Consolacion, Cebu</span>
-                <hr>
-            </div>
-
-            <div class="contacts">
-                <span class="resumeHeaders">Contacts</span>
-                <ul class="contactList">
-                    <li>
-                        <img src="phoneLogo.png" alt="phoneLogo" class="phoneLogo">
-                            <span class="number">
-                                09284374512
-                            </span>
-                    </li>
-
-                    <li>
-                        <img src="emailLogo.png" alt="emailLogo" class="emailLogo">
-                            <span class="email">
-                                emondejar62@gmail.com
-                            </span>
-                    </li>
-
-                    <li>
-                        <img src="fbLogo.png" alt="fbLogo" class="fbLogo">
-                            <span class="facebook">
-                                <a href="https://www.facebook.com/evjmondejar" class="socmed" target="_blank">
-                                    Evj Mondejar
-                                </a>
-                            </span>
-                    </li>
-
-                    <li>
-                        <img src="igLogo.jpg" alt="igLogo" class="igLogo">
-                            <span class="instagram">
-                               <a href="https://www.instagram.com/ebidzii/" class="socmed" target="_blank">
-                                @ebidzii
-                                </a> 
-                            </span> 
-                    </li>
-               </ul>
-            </div>
-
-            <div class="skills">
-                <span class="resumeHeaders">Skills</span>
-                <ul class="skillsList">
-                    <li>Project Management Skills</li>
-                    <li>Programming</li>
-                    <li>Critical Thinking</li>
-                    <li>Active Listening</li>
-                    <li>Communication Skills</li>
-                </ul>
-            </div>
-
-            <div class="education">
-                <span class="resumeHeaders">Education</span>
-
-                    <div class="cite">
-                        <span class="school">CITE TECHNICAL INSTITUTE, INC.</span>
-                        Diploma in Computer Engineering Technology
-                        2022 - Present
-                    </div>
-    
-                    <div class="christi">
-                        <span class="school">ACADEMIA DEL CHRISTIFIDELIS</span>
-                        SHS Graduate, STEM track
-                        2020 - 2022
-    
-                        JHS Graduate
-                        2017 - 2020
-                    </div>     
-            </div>
-
-            <div class="coreCompetencies">
-                <span class="resumeHeaders">Core Competencies</span>
-
-                <div class="coreContents">
-
-                    <span class="coreHeaders">Programming</span>
-
-                     <span class="coreContents">Proficient in coding, demonstrating expertise in Java, C, C++, Html, Css, Javascript.</span>
-
-                     <br><br>
-                    <span class="coreHeaders">Digital Designing</span>
-                    Skilled in using Photoshop for graphic deisgn and digital artwork.
-                    
-                    <br><br>
-                    <span class="coreHeaders">Animation</span>
-                    Competent in creating animations, showcasing creativity and technical skills in visual storytelling.
-
-                    <br><br>
-                    <span class="coreHeaders">Computer Assembly/Disassembly</span>
-                    Experienced in assembling and disassembling computer hardware components.
-
-                    <br><br>
-                    <span class="coreHeaders">Computer Troubleshooting</span>
-                    Proven ability to identify and troubleshoot computer issued ensuring smooth functionality.
-                </div>        
-            </div>
-
-            
-         <div class="certificates">
-
-            <span class="resumeHeaders">Awards and Certificates</span>
-            
-            <div class="awards">
-                <ul>
-                    <li>ELECTRONIC PRODUCTS ASSEMBLY AND SERVICING NC II(EPASS NC II)
-                    </li>
-    
-                    <li>COMPUTER SYSTEMS SERVICING NC II (CSS NC II)
-                    </li>
-                    <li>Champion (2015 Consolacion District Meet (Lawn Tennis))</li>
-                    <li>Champion (2016 Consolacion District Meet (Lawn Tennis))</li>
-                    <li>MVP (One on One basketball Training Camp)</li>
-                    <li>Champion (2018 Liloan District Meet (Lawn Tennis))</li>
-                    <li>Champion (2019 Liloan District Meet (Lawn Tennis))</li>
-                    <li>Champion (CCTC Lawn Tennis Tournament(Advance Division))</li>
-                    <li>Champion (CCTC Lawn Tennis Tournament(Elite Division))</li>
-                </ul>
-            </div>
-            
-                
-            </div>
-        </div>
-
-      <nav>
-            <a href="#whatIdo" class="anav">What I do</a>
-            <a href="#projects" class="anav">Projects</a>
-            <a href="#resume" class="anav">Resume and Contacts</a>
-        </nav>
-    </body>
+  <footer class="site-footer"><div class="container"><a class="brand" href="#home"><span>EVJ</span><i></i></a><p>Designed &amp; built by EVJ Mondejar <span id="current-year"></span></p><a href="#home" class="back-to-top">Back to top ↑</a></div></footer>
+</body>
 </html>
