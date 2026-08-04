@@ -10,10 +10,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script>
+    try {
+      const savedTheme = localStorage.getItem('portfolio-theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (savedTheme === 'dark' || (!savedTheme && prefersDark)) document.documentElement.dataset.theme = 'dark';
+    } catch (_) { /* Theme preference is optional. */ }
+  </script>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
+  <canvas class="ambient-canvas" aria-hidden="true"></canvas>
   <header class="site-header">
     <nav class="nav container" aria-label="Primary navigation">
       <a class="brand" href="#home" aria-label="EVJ Mondejar home"><span>EVJ</span><i></i></a>
@@ -24,6 +32,9 @@
         <a href="#resume">Resume</a>
         <a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
       </div>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Switch theme">
+        <i class="fa-solid fa-moon" aria-hidden="true"></i><span class="theme-toggle-text">Dark</span>
+      </button>
     </nav>
   </header>
 
